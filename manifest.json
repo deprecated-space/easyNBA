@@ -2,7 +2,7 @@
   "name": "EasyNBA",
   "manifest_version": 2,
   "version": "1.0.0",
-  "description": "watch nba highlights in an easy way",
+  "description": "an chrome extension to watch NBA highlights with no ads",
   "icons":
   {
     "16": "icons/icon_16.png",
@@ -18,14 +18,23 @@
   },
   "content_scripts": [
     {
-      "matches": ["*://sports.qq.com/kbsweb/game.htm*", 
-        "*://sports.qq.com/kbsweb/kbsshare/game.htm*"],
-      "js": ["content-scripts/ua.js"],
+      "matches": [
+        "*://sports.qq.com/kbsweb/game.htm*",
+        "*://sports.qq.com/kbsweb/kbsshare/game.htm*"
+      ],
+      "js": ["content-scripts/changeUA.js"],
       "run_at": "document_start"
     },
     {
-      "matches": ["https://www.baidu.com/s?wd=nba"], 
-      "js": ["content-scripts/unfold.js"],
+      "matches": [
+        "*://sports.qq.com/kbsweb/kbsshare/game.htm*"
+      ],
+      "js": ["content-scripts/play.js"],
+      "run_at": "document_end"
+    },
+    {
+      "matches": ["https://www.baidu.com/s?*wd=nba*"],
+      "js": ["content-scripts/teamList.js"],
       "run_at": "document_end"
     }
   ]

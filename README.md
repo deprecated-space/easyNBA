@@ -1,3 +1,3 @@
 # EasyNBA
 
-watch nba highlights in an easy way
+an chrome extension to watch NBA highlights with no ads

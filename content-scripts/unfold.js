@@ -1,1 +1,0 @@
-document.querySelector('.op-nbaseason-showmore').click()
