@@ -1,4 +1,4 @@
-# EasyNBA
+# easyNBA
 
 an chrome extension to watch NBA highlights in my own way
 
