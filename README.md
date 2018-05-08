@@ -16,6 +16,7 @@ an chrome extension to watch NBA highlights in my own way
 - 关注球队添加背景颜色
 - 打开集锦页自动播放
 - 集锦页空格暂停
+- 可设置播放点
 
 ## 后记
 
