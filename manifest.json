@@ -16,6 +16,12 @@
       "38": "icons/icon_38.png"
     }
   },
+  "permissions": [
+    "storage"
+  ],
+  "options_ui": {
+    "page": "option/option.html"
+  },
   "content_scripts": [
     {
       "matches": [
